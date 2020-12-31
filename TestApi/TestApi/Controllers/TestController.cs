@@ -47,7 +47,7 @@ namespace TestApi.Controllers
             return new DependencyResult()
             {
                 CurrentTime = DateTimeOffset.Now, Endpoint = endpoint,
-                Message = $"${response.StatusCode} : ${response.RequestMessage.ToString()}"
+                Message = $"{response.StatusCode} : {response.RequestMessage.ToString()}"
             };
         }
     }
